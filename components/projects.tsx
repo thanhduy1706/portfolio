@@ -1,11 +1,13 @@
 import React from 'react'
 import SectionHeading from './section-heading'
 import { projectsData } from '@/lib/data'
-import Image from 'next/image'
+import Project from './project'
+
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects"
+    className="scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
 
       <div>
@@ -22,25 +24,3 @@ export default function Projects() {
 }
 
 
-type ProjectProps = (typeof projectsData)[number]
-
-
-function Project(
-  { title,
-    description,
-    tags,
-    imageUrl }: ProjectProps
-) {
-  return (
-  <section>
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <ul>
-      {tags.map((tag, index) => (
-        <li key={index}>{tag}</li>
-      ))}
-    </ul>
-    <Image src={imageUrl} alt="Project I worked on" quality={100}/>
-  </section>
-  )
-}
