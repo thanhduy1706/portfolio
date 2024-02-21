@@ -1,9 +1,19 @@
+"use client"
+
 import React from 'react'
+import SectionHeading from './section-heading'
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <section className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'>
-        <h2 className='mb-8 text-3xl font-medium uppercase'>About me</h2>
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175}}
+
+     className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'>
+        <SectionHeading>About me</SectionHeading>
+
         <p className='mb-3'>
         I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
@@ -13,7 +23,7 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
+        . I am also familiar with TypeScript. I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
@@ -26,6 +36,6 @@ export default function About() {
         <span className="font-medium">history and philosophy</span>. I'm also
         learning how to play the guitar.
         </p>
-    </section>
+    </motion.section>
   )
 }
