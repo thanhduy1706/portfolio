@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import datavizxImg from "@/public/datavizxImg.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import portfolioImg from "@/public/portfolioImg.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -69,19 +69,12 @@ export const projectsData = [
     imageUrl: datavizxImg,
   },
   {
-    title: "rmtDev",
+    title: "Portfolio",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
+      "Skilled Next.js and Tailwind CSS developer focused on crafting beautiful, performant user interfaces. Passionate about staying ahead in web development.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer motion"],
+    imageUrl: portfolioImg,
+  }
 ] as const;
 
 export const skillsData = [
