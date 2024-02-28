@@ -6,8 +6,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Oddatelier | Portfolio",
-  description: "Oddatelier portfolio",
+  title: "Nguyen Duy | Portfolio",
+  description: "Nguyen Duy's portfolio website",
 };
 
 export default function RootLayout({
@@ -26,7 +26,6 @@ export default function RootLayout({
         <SpeedInsights />
         <ActiveSectionContextProvider>
           <Header />
-
           {children}
         </ActiveSectionContextProvider>
       </body>
