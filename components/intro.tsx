@@ -44,11 +44,11 @@ export default function Intro() {
             <Image
               src="https://i.scdn.co/image/ab6761610000e5ebd95cf4457fac4cc62311f84f"
               alt="Jennie portrait"
-              width="192"
-              height="192"
+              width="162"
+              height="162"
               quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-29 w-29 rounded-full object-cover border-[0.35rem] hover:scale-110 transition border-white shadow-xl"
             />
           </motion.div>
 
@@ -63,7 +63,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            👋
+            💻
           </motion.span>
         </div>
       </div>
@@ -80,7 +80,7 @@ export default function Intro() {
         }}
       >
         <span className="font-bold">Hi! I'm Duy.</span> I'm a{" "}
-        <span className="font-bold"> developer</span> with{" "}
+        <span className="font-bold"> junior</span> with{" "}
         <span className="font-bold">36 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
