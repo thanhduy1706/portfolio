@@ -24,7 +24,7 @@ export default function ContactFormEmail({
   return (
     <Html>
       <Head />
-      <Preview>New message from your portfolio site</Preview>
+      <Preview>New message from your portfolio website</Preview>
       <Tailwind>
         <Body className="text-black bg-gray-100">
           <Container>

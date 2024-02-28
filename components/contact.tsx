@@ -1,35 +1,39 @@
-"use client ";
+"use client";
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { useSectionInView } from "@/lib/hooks";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import SubmitBtn from "./submit-btn";
 import { motion } from "framer-motion";
-import { sendEmail } from "@/action/sendEmail";
+import { useSectionInView } from "@/lib/hooks";
+import { sendEmail } from "@/actions/sendEmail";
+import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact", 0.5);
+  const { ref } = useSectionInView("Contact");
 
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      className="mb-28 sm:mb-40"
       id="contact"
       ref={ref}
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
     >
-      <SectionHeading>Contact</SectionHeading>
+      <SectionHeading>Contact me</SectionHeading>
 
-      <p>
+      <p className="-mt-6 text-gray-700">
         Please contact me via{" "}
-        <a
-          className="underline hover:text-gray-900"
-          href="mailto:ndtduy.work@gmail.com"
-        >
+        <a className="underline" href="mailto:ndtduy.work@gmail.com">
           ndtduy.work@gmail.com
         </a>{" "}
         or through this form.
@@ -40,10 +44,6 @@ export default function Contact() {
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
-          console.log("On client");
-          console.log(formData.get("senderEmail"));
-          console.log(formData.get("message"));
-
           if (error) {
             toast.error(error);
             return;
@@ -53,7 +53,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="px-4 transition-all rounded-lg borderBlack h-14 "
+          className="px-4 rounded-lg h-14 borderBlack "
           name="senderEmail"
           type="email"
           required
@@ -61,7 +61,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="p-4 my-3 transition-all rounded-lg borderBlack h-52"
+          className="p-4 my-3 rounded-lg h-52 borderBlack"
           name="message"
           placeholder="Your message"
           required
