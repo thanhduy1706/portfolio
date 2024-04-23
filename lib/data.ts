@@ -2,6 +2,7 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import datavizxImg from "@/public/datavizxImg.png";
 import portfolioImg from "@/public/portfolioImg.png";
+import intellispaceImg from "@/public/intellispaceImg.png";
 
 
 export const links = [
@@ -43,6 +44,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "IntelliSpace",
+    description:
+      "Experienced Next.js and Tailwind CSS developer specializing in the creation of visually stunning and high-performance user interfaces.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer motion"],
+    imageUrl: intellispaceImg,
+  },
   {
     title: "DataVizX",
     description:
