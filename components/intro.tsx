@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import portrait from "@/public/portrait.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -42,7 +43,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://i.postimg.cc/FKfwfwvQ/ITITIU21191.png"
+              src={portrait}
               alt="portrait"
               width="162"
               height="162"
