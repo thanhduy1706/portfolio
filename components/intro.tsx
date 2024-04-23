@@ -42,8 +42,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://i.scdn.co/image/ab6761610000e5ebd95cf4457fac4cc62311f84f"
-              alt="Jennie portrait"
+              src="https://i.postimg.cc/FKfwfwvQ/ITITIU21191.png"
+              alt="portrait"
               width="162"
               height="162"
               quality="100"
@@ -81,7 +81,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hi! I'm Duy.</span> I'm a{" "}
         <span className="font-bold"> junior</span> with{" "}
-        <span className="font-bold">36 years</span> of experience. I enjoy
+        <span className="font-bold">6 months</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
@@ -111,7 +111,7 @@ export default function Intro() {
 
         <a
           className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack"
-          href="/CV.pdf"
+          href="/FE_Intern_NguyenDuy.pdf"
           download={true}
         >
           Download CV{" "}
