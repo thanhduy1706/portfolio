@@ -9,3 +9,7 @@ html {
 .borderBlack {
   @apply border border-black/50;
 }
+
+.hoverScale {
+  @apply transition hover:scale-110;
+}

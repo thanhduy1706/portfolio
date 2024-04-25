@@ -50,7 +50,7 @@ export default function About() {
                 watching movies, and playing with my dog. I also enjoy{' '}
                 <span className="font-medium">learning new things</span>. I am
                 currently learning about{' '}
-                <span className="font-medium">history and philosophy</span>. I'm
+                <span className="font-medium">UI/UX</span>. I'm
                 also learning how to play the guitar.
             </p>
         </motion.section>

@@ -48,14 +48,14 @@ export const projectsData = [
     title: "IntelliSpace",
     description:
       "Experienced Next.js and Tailwind CSS developer specializing in the creation of visually stunning and high-performance user interfaces.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer motion"],
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "Framer motion"],
     imageUrl: intellispaceImg,
   },
   {
     title: "DataVizX",
     description:
       "DataVizX is a data visualization application. The application is the revolutionary tool that transforms your data into stunning visual insights.",
-    tags: ["React", "React.js", "MongoDB", "Tailwind"],
+    tags: ["React", "React.js", "MongoDB", "TailwindCSS"],
     imageUrl: datavizxImg,
   },
   {
@@ -71,11 +71,10 @@ export const skillsData = [
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
+  "TailwindCSS",
   "Framer Motion",
 ] as const;
