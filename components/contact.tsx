@@ -15,7 +15,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-5 sm:mb-28 w-[min(100%,38rem)] text-center"
       initial={{
         opacity: 0,
       }}
@@ -35,11 +35,10 @@ export default function Contact() {
         Please contact me via{" "}
         <a className="underline" href="mailto:ndtduy.work@gmail.com">
           ndtduy.work@gmail.com
-        </a>{" "}
-        or through this form.
+        </a>
       </p>
 
-      <form
+      {/* <form
         className="flex flex-col mt-10"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
@@ -68,7 +67,7 @@ export default function Contact() {
           maxLength={5000}
         />
         <SubmitBtn />
-      </form>
+      </form> */}
     </motion.section>
-  );
+  )
 }

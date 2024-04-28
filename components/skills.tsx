@@ -31,23 +31,23 @@ export default function Skills() {
       >
         <SectionHeading>Skills</SectionHeading>
 
-        <div className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-          {skillsData.map((skill, index) => (
-            <motion.div
-              className="px-5 py-2 bg-white rounded-lg shadow-lg borderBlack hover:bg-true-gray-900 hover:border-light-50"
-              key={index}
-              variants={fadeInAnimationVariants}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              custom={index}
-            >
-              {skill}
-            </motion.div>
-          ))}
-        </div>
+        <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+            {skillsData.map((skill, index) => (
+              <motion.li
+                className="px-5 py-2 rounded-lg shadow-lg bg-gray-50 borderBlack"
+                key={index}
+                variants={fadeInAnimationVariants}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                custom={index}
+              >
+                {skill}
+              </motion.li>
+            ))}
+        </ul>
       </section>
     );
 }
