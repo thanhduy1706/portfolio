@@ -31,7 +31,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="-mt-6 text-gray-700">
+      <p className="mt-10 text-gray-700">
         Please contact me via{" "}
         <a className="underline" href="mailto:ndtduy.work@gmail.com">
           ndtduy.work@gmail.com

@@ -100,7 +100,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-2 py-3 text-white transition bg-indigo-500 rounded-full outline-none cursor-pointer group focus:scale-110 hover:scale-110 hover:bg-indigo-700 px-7 active:scale-105"
+          className="flex items-center gap-2 py-3 text-white transition bg-indigo-500 rounded-full shadow-lg outline-none cursor-pointer group focus:scale-110 hover:scale-110 hover:bg-indigo-700 px-7 active:scale-105"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -111,7 +111,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack"
+          className="flex items-center gap-2 py-3 transition bg-white rounded-full shadow-lg outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack"
           href="/FE_Intern_NguyenDuy.pdf"
           download={true}
         >
@@ -120,7 +120,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white p-4 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack shadow-lg"
           href="https://www.linkedin.com/in/thanhduy1706/"
           target="_blank"
         >
@@ -128,7 +128,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white p-4 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack shadow-lg"
           href="https://github.com/thanhduy1706"
           target="_blank"
         >
