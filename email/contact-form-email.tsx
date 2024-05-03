@@ -9,8 +9,8 @@
 //   Preview,
 //   Section,
 //   Text,
-// } from "@react-email/components";
-// import { Tailwind } from "@react-email/tailwind";
+// } from "@ /components";
+// import { Tailwind } from " ";
 
 // type ContactFormEmailProps = {
 //   message: string;
