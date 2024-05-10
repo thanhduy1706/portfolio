@@ -7,8 +7,8 @@ import intellispaceImg from "@/public/intellispaceImg.png";
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: "Intro",
+    hash: "#intro",
   },
   {
     name: "About",
