@@ -1,9 +1,8 @@
 import React from "react";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuGraduationCap, LuCode2 } from "react-icons/lu";
 import datavizxImg from "@/public/datavizxImg.png";
 import portfolioImg from "@/public/portfolioImg.png";
 import intellispaceImg from "@/public/intellispaceImg.png";
-
 
 export const links = [
   {
@@ -33,6 +32,21 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Front-end Software",
+    location: "HSV Group - Ho Chi Minh City, Vietnam",
+    description: "",
+    icon: React.createElement(LuCode2),
+    date: "Nov 2024 - now",
+  },
+  {
+    title: "Front-end Software",
+    location: "Tanca.io - Ho Chi Minh City, Vietnam",
+    description:
+      "Optimized website performance by analyzing and enhancing code structure, ensuring faster load times and a smoother user experience. Collaborated with the maintenance team to identify and fix interface errors, address logic-related bugs, and ensure cross-browser compatibility. Integrated new features into existing systems using modern front-end technologies like ReactJS, Recharts, and Ant Design, while maintaining compatibility with backend APIs.",
+    icon: React.createElement(LuCode2),
+    date: "Jun 2024 - Nov 2024",
+  },
   {
     title: "Undergraduate at Ho Chi Minh City International University",
     location: "Ho Chi Minh City, Vietnam",

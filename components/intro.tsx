@@ -100,7 +100,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-2 py-3 text-white transition bg-indigo-500 rounded-full shadow-lg outline-none cursor-pointer group focus:scale-110 hover:scale-110 hover:bg-indigo-700 px-7 active:scale-105"
+          className="flex items-center gap-2 py-3 text-white transition bg-gradient-to-br from-indigo-300 via-indigo-500 to-indigo-700 rounded-full shadow-lg outline-none cursor-pointer group focus:scale-110 hover:scale-110 px-7 active:scale-105"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -112,10 +112,10 @@ export default function Intro() {
 
         <a
           className="flex items-center gap-2 py-3 transition bg-white rounded-full shadow-lg outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack"
-          href="/FE_Intern_NguyenDuy.pdf"
+          href="/CV__FE_NguyenDuy.pdf"
           download={true}
         >
-          Download CV{" "}
+          Download my CV{" "}
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
 

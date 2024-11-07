@@ -31,43 +31,12 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="mt-10 text-gray-700">
+      <p className="mt-5 text-gray-700">
         Please contact me via{" "}
         <a className="underline" href="mailto:ndtduy.work@gmail.com">
           ndtduy.work@gmail.com
         </a>
       </p>
-
-      {/* <form
-        className="flex flex-col mt-10"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
-      >
-        <input
-          className="px-4 rounded-lg h-14 borderBlack "
-          name="senderEmail"
-          type="email"
-          required
-          maxLength={500}
-          placeholder="Your email"
-        />
-        <textarea
-          className="p-4 my-3 rounded-lg h-52 borderBlack"
-          name="message"
-          placeholder="Your message"
-          required
-          maxLength={5000}
-        />
-        <SubmitBtn />
-      </form> */}
     </motion.section>
-  )
+  );
 }
