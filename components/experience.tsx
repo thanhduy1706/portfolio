@@ -32,9 +32,7 @@ export default function Experience() {
             contentArrowStyle={{
               borderRight: "0.5rem solid #6b7280",
             }}
-            date={
-              <span className="text-sm text-gray-500">{experience.date}</span>
-            }
+            date={experience.date}
             icon={experience.icon}
             iconStyle={{
               background: "#ffffff",
