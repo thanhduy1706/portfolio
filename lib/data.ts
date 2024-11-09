@@ -42,6 +42,7 @@ export const experiencesData = [
   {
     title: "Front-end Software",
     location: "Tanca.io - Ho Chi Minh City, Vietnam",
+    description: "",
     icon: React.createElement(LuCode),
     date: "Jun 2024 - Nov 2024",
   },
