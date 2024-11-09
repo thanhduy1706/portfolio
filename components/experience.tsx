@@ -1,61 +1,60 @@
-'use client';
+"use client";
 
-import React from 'react';
-import SectionHeading from './section-heading';
+import React from "react";
+import SectionHeading from "./section-heading";
 import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { experiencesData } from '@/lib/data';
-import { useSectionInView } from '@/lib/hooks';
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { experiencesData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Experience() {
-    const { ref } = useSectionInView('Experience');
+  const { ref } = useSectionInView("Experience");
 
-    return (
-        <section
-            id="experience"
-            ref={ref}
-            className="mb-9 scroll-mt-28 sm:mb-8"
-        >
-            <SectionHeading>Experience</SectionHeading>
-            <VerticalTimeline lineColor="">
-                {experiencesData.map((experience, index) => (
-                    <React.Fragment key={index}>
-                        <VerticalTimelineElement
-                            visible={true}
-                            contentStyle={{
-                                background: 'f3f4f6',
-                                boxShadow: 'none',
-                                border: '0.5px solid rgba(0, 0, 0, 0.05)',
-                                textAlign: 'left',
-                                padding: '1.3rem 2rem',
-                                borderRadius: '1rem',
-                            }}
-                            contentArrowStyle={{
-                                borderRight: '0.4rem solid #9ca3af',
-                            }}
-                            date={experience.date}
-                            icon={experience.icon}
-                            iconStyle={{
-                                background: 'white',
-                                fontSize: '1.5rem',
-                            }}
-                        >
-                            <h3 className="font-semibold">
-                                {experience.title}
-                            </h3>
-                            <p className="font-normal !mt-0">
-                                {experience.location}
-                            </p>
-                            <p className="!mt-1 !font-normal text-gray-700">
-                                {experience.description}
-                            </p>
-                        </VerticalTimelineElement>
-                    </React.Fragment>
-                ))}
-            </VerticalTimeline>
-        </section>
-    );
+  return (
+    <section id="experience" ref={ref} className="mb-16 scroll-mt-28 sm:mb-14">
+      <SectionHeading>Experience</SectionHeading>
+      <VerticalTimeline lineColor="#4b5563">
+        {experiencesData.map((experience, index) => (
+          <VerticalTimelineElement
+            key={index}
+            visible={true}
+            contentStyle={{
+              background: "#e5e7eb",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+              border: "1px solid #d1d5db",
+              textAlign: "left",
+              padding: "1.5rem 2.5rem",
+              borderRadius: "1.25rem",
+            }}
+            contentArrowStyle={{
+              borderRight: "0.5rem solid #6b7280",
+            }}
+            date={
+              <span className="text-sm text-gray-500">{experience.date}</span>
+            }
+            icon={experience.icon}
+            iconStyle={{
+              background: "#ffffff",
+              fontSize: "1.75rem",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              border: "1px solid #d1d5db",
+            }}
+          >
+            <h3 className="font-semibold text-lg text-gray-900">
+              {experience.title}
+            </h3>
+            <p className="font-medium text-gray-600 mt-1">
+              {experience.location}
+            </p>
+            <p className="mt-2 text-gray-700 leading-relaxed">
+              {experience.description}
+            </p>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
+    </section>
+  );
 }
