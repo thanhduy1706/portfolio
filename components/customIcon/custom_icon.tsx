@@ -1,7 +1,7 @@
 import Image from "next/image";
-import HCMIU from "../public/HCMIUlogo.png";
-import Tanca from "../public/TancaLogo.png";
-import HSVG from "../public/HSVGLogo.png";
+import HCMIU from "/HCMIUlogo.png";
+import Tanca from "/TancaLogo.png";
+import HSVG from "/HSVGLogo.png";
 
 const iconConfig = {
   width: 36,
