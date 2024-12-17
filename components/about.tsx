@@ -5,6 +5,12 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
+/**
+ * About component renders a section with information about the author.
+ * Uses motion animation for section visibility and a custom hook for section view management.
+ *
+ * @returns {JSX.Element} A section element with a heading and two paragraphs about personal and professional interests.
+ */
 export default function About() {
   const { ref } = useSectionInView("About");
 
@@ -19,7 +25,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I enrolled in a coding bootcamp and learned{" "}
+        I enrolled in a coding bootcamp on YouTube and learned{" "}
         <span className="font-medium">frontend web development</span>. I{" "}
         <span className="underline">love</span> the feeling of finally figuring
         out a solution to a problem. My core stack is{" "}
@@ -34,7 +40,7 @@ export default function About() {
         <span className="italic">When I'm not coding</span>, I enjoy watching
         movies, and playing with my dog. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
-        learning about <span className="font-medium">UI/UX</span>. I'm also
+        learning about <span className="font-medium">Back-end</span>. I'm also
         learning how to build a mobile application.
       </p>
     </motion.section>

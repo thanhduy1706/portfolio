@@ -11,6 +11,13 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import portrait from "@/public/portrait.png";
 
+/**
+ * Intro section component of the webpage.
+ * This component is responsible for rendering the introduction section
+ * including the portrait image, introductory text, and various action links.
+ *
+ * @returns The JSX for the intro section.
+ */
 export default function Intro() {
   const { ref } = useSectionInView("Intro", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
