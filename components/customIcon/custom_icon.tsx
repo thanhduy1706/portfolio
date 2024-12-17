@@ -10,19 +10,15 @@ const classNameConfig = {
   className:
     "flex items-center justify-center w-full h-full rounded-full bg-white",
 };
-
-export function HCMIUicon() {
-  return (
-    <div {...classNameConfig}>
-      <Image src="/HCMIUlogo.png" alt="HCMIU Logo" {...iconConfig} />
-    </div>
-  );
-}
-
 export function Tancaicon() {
   return (
     <div {...classNameConfig}>
-      <Image src="/TancaLogo.png" alt="Tanca Logo" {...iconConfig} />
+      <Image
+        src="/TancaLogo.png"
+        alt="Tanca Logo"
+        {...iconConfig}
+        quality={100}
+      />
     </div>
   );
 }
@@ -30,7 +26,25 @@ export function Tancaicon() {
 export function HSVGicon() {
   return (
     <div {...classNameConfig}>
-      <Image src="/HSVGLogo.png" alt="HSVG Logo" {...iconConfig} />
+      <Image
+        src="/HSVGLogo.png"
+        alt="HSVG Logo"
+        {...iconConfig}
+        quality={100}
+      />
+    </div>
+  );
+}
+
+export function HCMIUicon() {
+  return (
+    <div {...classNameConfig}>
+      <Image
+        src="/HCMIUlogo.png"
+        alt="HCMIU Logo"
+        {...iconConfig}
+        quality={100}
+      />
     </div>
   );
 }

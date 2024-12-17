@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth mdl-js">
       <Head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta
