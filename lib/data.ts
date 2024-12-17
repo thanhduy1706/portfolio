@@ -42,18 +42,14 @@ export const experiencesData = [
     location: "HSV Group - Ho Chi Minh City, Vietnam",
     description:
       "I work with The Face Shop, Beauty Box, and the internal website.",
-    icon: React.createElement(HSVGicon)
-      ? React.createElement(HSVGicon)
-      : React.createElement(LuBriefcaseBusiness),
+    icon: React.createElement(LuBriefcaseBusiness),
     date: "Nov 2024 - now",
   },
   {
     title: "Front-end Software",
     location: "Tanca Joint Stock Company - Ho Chi Minh City, Vietnam",
     description: "I work with Tanca.io website.",
-    icon: React.createElement(Tancaicon)
-      ? React.createElement(Tancaicon)
-      : React.createElement(LuBriefcaseBusiness),
+    icon: React.createElement(LuBriefcaseBusiness),
     date: "Jun 2024 - Nov 2024",
   },
   {
