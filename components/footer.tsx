@@ -14,8 +14,8 @@ export default function Footer() {
       </small>
       <p className="text-xs">
         <span className="font-semibold">About this website:</span> built with
-        React (Next.JS), TypeScript, TailwindCSS, shadcn/ui, Framer Motion, and
-        Vercel hosting.
+        React (Next.JS 15), TypeScript, TailwindCSS, shadcn/ui, Framer Motion,
+        and Vercel hosting.
       </p>
     </footer>
   );
