@@ -1,34 +1,35 @@
-'use client';
-import React from 'react';
-import SectionHeading from './section-heading';
-import { projectsData } from '@/lib/data';
-import Project from './project';
-import { useSectionInView } from '@/lib/hooks';
+"use client";
+
+import React from "react";
+import SectionHeading from "./section-heading";
+import { projectsData } from "@/lib/data";
+import Project from "./project";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Projects() {
-    const { ref } = useSectionInView('Projects', 0.5);
+  const { ref } = useSectionInView("Projects", 0.5);
 
-    // const { ref, inView } = useInView({
-    //   threshold: 0.5,
-    // })
-    // const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
+  // const { ref, inView } = useInView({
+  //   threshold: 0.5,
+  // })
+  // const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
 
-    // useEffect(() => {
-    //   if (inView && Date.now() - timeOfLastClick > 1000) {
-    //     setActiveSection('Projects')
-    //   }
-    // }, [inView, setActiveSection, timeOfLastClick])
-    return (
-        <section ref={ref} id="projects" className="mb-20 scroll-mt-28">
-            <SectionHeading>Projects</SectionHeading>
+  // useEffect(() => {
+  //   if (inView && Date.now() - timeOfLastClick > 1000) {
+  //     setActiveSection('Projects')
+  //   }
+  // }, [inView, setActiveSection, timeOfLastClick])
+  return (
+    <section ref={ref} id="projects" className="mb-20 scroll-mt-28">
+      <SectionHeading>Projects</SectionHeading>
 
-            <div>
-                {projectsData.map((project, index) => (
-                    <React.Fragment key={index}>
-                        <Project {...project} />
-                    </React.Fragment>
-                ))}
-            </div>
-        </section>
-    );
+      <div>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
 }

@@ -1,13 +1,15 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Download, Linkedin, Github } from "lucide-react";
+import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import portrait from "@/public/portrait.png";
+import portrait from "@/public/portrait.jpeg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Intro", 0.5);
@@ -51,81 +53,67 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            💻
+            👋
           </motion.span>
         </div>
       </div>
 
       <motion.h1
-        className="mb-10 mt-10 px-4 font-medium text-2xl !leading-[1.5] sm:text-2xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 125,
-          delay: 0.2,
-          duration: 0.7,
-        }}
       >
-        <span className="font-bold">Hi! I'm Duy.</span> I'm a{" "}
-        <span className="font-bold"> junior</span> with{" "}
-        <span className="font-bold">1 year</span> of experience. I enjoy
+        <span className="font-bold">Hello, I'm Duy Nguyen.</span> I'm a{" "}
+        <span className="font-bold">Front-end developer</span> with{" "}
+        <span className="font-bold">2 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
       <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          type: "spring",
-          stiffness: 125,
-          delay: 0.3,
-          duration: 0.7,
+          delay: 0.1,
         }}
-        className="flex flex-wrap items-center justify-center gap-4 px-4 sm:gap-6"
       >
         <Link
           href="#contact"
-          className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white transition-all rounded-full bg-gradient-to-br from-indigo-300 via-indigo-500 to-indigo-700 shadow-lg hover:shadow-xl active:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:scale-110 active:scale-105"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me!
-          <ArrowRight className="w-4 h-4 transition opacity-70 group-hover:translate-x-2" />
+          Contact me here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
-        <Link
+        <a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV__FE_NguyenDuy.pdf"
-          download={true}
-          className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-gray-700 transition-all rounded-full bg-gradient-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 shadow-lg hover:shadow-xl active:shadow-md border border-gray-300 hover:border-gray-400 hover:scale-110 active:scale-105"
+          download
         >
-          Download CV
-          <Download className="w-4 h-4 transition-transform group-hover:translate-y-1" />
-        </Link>
+          Download CV{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+        </a>
 
-        <div className="flex items-center gap-4 sm:gap-6">
-          <Link
-            href="https://www.linkedin.com/in/thanhduy1706/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-12 h-12 transition-all bg-white rounded-full shadow-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 hover:shadow-lg active:shadow-sm border border-gray-200 hover:border-blue-500 hover:scale-[1.15] active:scale-105"
-            aria-label="LinkedIn Profile"
-          >
-            <Linkedin className="w-5 h-5 text-blue-600" />
-          </Link>
-          <Link
-            href="https://github.com/thanhduy1706"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-12 h-12 transition-all bg-white rounded-full shadow-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 hover:shadow-lg active:shadow-sm border border-gray-200 hover:border-gray-800 hover:scale-[1.15] active:scale-105"
-            aria-label="GitHub Profile"
-          >
-            <Github className="w-5 h-5 text-gray-800" />
-          </Link>
-        </div>
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.linkedin.com/in/thanhduy1706/"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://github.com/thanhduy1706"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
       </motion.div>
     </section>
   );

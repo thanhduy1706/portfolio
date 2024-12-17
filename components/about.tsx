@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About", 0.5);
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
@@ -18,7 +18,6 @@ export default function About() {
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
     >
       <SectionHeading>About me</SectionHeading>
-
       <p className="mb-3">
         I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">frontend web development</span>. I{" "}
